@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diwali New Year Wishes</title>
     <style>
-        /* Background with animated sparks */
+        /* Background color */
         body {
             background-color: #1a1a1a;
             font-family: 'Arial', sans-serif;
@@ -18,27 +18,6 @@
             overflow: hidden;
         }
 
-        .sparkle {
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            background-color: #ffdd59;
-            border-radius: 50%;
-            animation: sparkle 2s linear infinite;
-            box-shadow: 0 0 10px #ffdd59, 0 0 20px #ffdd59;
-        }
-
-        @keyframes sparkle {
-            0% {
-                transform: translate(0, 0) scale(1);
-                opacity: 1;
-            }
-            100% {
-                transform: translate(calc(-50vw + 100 * 1vw), calc(-50vh + 100 * 1vh)) scale(0);
-                opacity: 0;
-            }
-        }
-
         /* Center container */
         .container {
             text-align: center;
@@ -47,8 +26,6 @@
             border-radius: 15px;
             background-color: rgba(51, 51, 51, 0.9);
             box-shadow: 0px 0px 20px #ffdd59;
-            position: relative;
-            z-index: 1;
         }
 
         /* Greeting message */
@@ -65,28 +42,16 @@
             color: #ffdd59;
         }
 
-        /* Glowing Diya Icon */
+        /* Diya Icon */
         .diya {
             font-size: 3em;
             margin-top: 25px;
             color: #ffb142;
-            animation: glow 1.5s infinite alternate;
-        }
-
-        @keyframes glow {
-            from { text-shadow: 0 0 10px #ffb142, 0 0 20px #ffdd59, 0 0 30px #ffb142; }
-            to { text-shadow: 0 0 20px #ffdd59, 0 0 30px #ffb142, 0 0 40px #ffdd59; }
+            text-shadow: 0 0 10px #ffb142, 0 0 20px #ffdd59;
         }
     </style>
 </head>
 <body>
-    <!-- Sparkle effect using small divs -->
-    <div class="sparkle" style="top: 30%; left: 20%; animation-duration: 3s;"></div>
-    <div class="sparkle" style="top: 50%; left: 40%; animation-duration: 2.5s;"></div>
-    <div class="sparkle" style="top: 70%; left: 60%; animation-duration: 2s;"></div>
-    <div class="sparkle" style="top: 80%; left: 80%; animation-duration: 3.5s;"></div>
-    <div class="sparkle" style="top: 40%; left: 90%; animation-duration: 2.8s;"></div>
-
     <div class="container">
         <h1>Happy New Year!</h1>
         <p>May this Diwali bring light, joy, and prosperity to your life!</p>
