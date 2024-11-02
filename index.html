@@ -18,7 +18,7 @@
             overflow: hidden;
         }
 
-        /* Center container */
+        /* Center container with glowing animation */
         .container {
             text-align: center;
             padding: 40px;
@@ -26,6 +26,17 @@
             border-radius: 15px;
             background-color: rgba(51, 51, 51, 0.9);
             box-shadow: 0px 0px 20px #ffdd59;
+            animation: glow 3s infinite alternate ease-in-out;
+        }
+
+        /* Container glow animation */
+        @keyframes glow {
+            0% {
+                box-shadow: 0px 0px 20px #ffdd59;
+            }
+            100% {
+                box-shadow: 0px 0px 40px #ffdd59;
+            }
         }
 
         /* Greeting message */
@@ -42,19 +53,32 @@
             color: #ffdd59;
         }
 
-        /* Diya Icon */
+        /* Diya Icon with pulsing animation */
         .diya {
             font-size: 3em;
             margin-top: 25px;
             color: #ffb142;
             text-shadow: 0 0 10px #ffb142, 0 0 20px #ffdd59;
+            animation: pulse 1.5s infinite ease-in-out;
+        }
+
+        /* Diya pulsing animation */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                text-shadow: 0 0 10px #ffb142, 0 0 20px #ffdd59;
+            }
+            100% {
+                transform: scale(1.1);
+                text-shadow: 0 0 15px #ffdd59, 0 0 30px #ffb142;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Happy New Year!</h1>
-        <p>May this Diwali bring light, joy, and prosperity to your life!</p>
+        <p>May your life be filled with light, love, and endless blessings this Diwali and New Year!</p>
         <div class="diya">🪔</div>
     </div>
 </body>
